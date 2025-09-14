@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://4sy4oeoj170"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vq3a5"]
+top_radius = 0.15
+bottom_radius = 0.15
+height = 0.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_gn0ur"]
+radius = 0.1
+height = 0.2
+radial_segments = 60
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_u6u1k"]
+top_radius = 0.15
+bottom_radius = 0.1
+height = 0.3
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vq3a5"]
+radius = 0.15
+height = 0.5
+
+[node name="Stylus" type="Node3D"]
+
+[node name="StylusBase1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.829097, 0.951078, -0.402706)
+mesh = SubResource("CylinderMesh_vq3a5")
+
+[node name="StylusBase2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.829097, 0.658639, -0.402706)
+mesh = SubResource("CylinderMesh_vq3a5")
+
+[node name="StylusBase3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.829118, 0.39948, -0.402801)
+mesh = SubResource("CylinderMesh_vq3a5")
+
+[node name="StylusTip" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.831802, -0.0688756, -0.402397)
+mesh = SubResource("SphereMesh_gn0ur")
+
+[node name="StylusBase4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.831902, 0.107566, -0.401646)
+mesh = SubResource("CylinderMesh_u6u1k")
+
+[node name="StylusSideThing" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.776175, 0.89823, -0.407894)
+mesh = SubResource("CapsuleMesh_vq3a5")
