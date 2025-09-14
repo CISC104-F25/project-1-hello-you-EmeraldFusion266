@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://clwrsdsnmy3md"]
+[gd_scene load_steps=21 format=3 uid="uid://clwrsdsnmy3md"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_m6jki"]
 
@@ -46,7 +46,11 @@ size = Vector3(2, 1, 0.5)
 [sub_resource type="BoxMesh" id="BoxMesh_uojgb"]
 size = Vector3(2.11, 1.9, 0.5)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m6jki"]
+albedo_color = Color(0.123575, 0.385519, 0.201209, 1)
+
 [sub_resource type="CylinderMesh" id="CylinderMesh_m6jki"]
+material = SubResource("StandardMaterial3D_m6jki")
 top_radius = 0.1
 bottom_radius = 0.1
 height = 0.235
