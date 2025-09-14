@@ -1,19 +1,42 @@
-[gd_scene format=3 uid="uid://clhttn3a0ep70"]
+[gd_scene load_steps=3 format=3 uid="uid://clhttn3a0ep70"]
+
+[ext_resource type="Texture2D" uid="uid://d3cmjtfawxf61" path="res://icon.svg" id="1_3seef"]
+[ext_resource type="Texture2D" uid="uid://cqpjem50iool5" path="res://SonicRushBoxArt.jpg" id="2_tlj50"]
 
 [node name="Part_C" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 80.0
+offset_top = -16.0
+offset_right = 80.0
+offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="PlaceholderLabel" type="Label" parent="."]
+[node name="OverviewLabel" type="Label" parent="."]
 layout_mode = 0
-offset_right = 1151.0
-offset_bottom = 656.0
-theme_override_font_sizes/font_size = 20
-text = "Add more labels, images, and other Control nodes to this scene to build your personal poster for Part C.
+offset_right = 333.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 55
+text = "Ayden Jones"
 
-Remember that you may need to scroll down to \"Theme Overrides > Font Sizes\" in the Inspector 
-to make your labels big enough to read. (This is font size 20px, for reference)."
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = -76.0
+offset_top = 503.0
+offset_right = 1092.0
+offset_bottom = 672.0
+text = "Hi! I made a Nintendo DS! No, I don't know how to get that box by the top screen to realign with the rest of the body. 
+It is somehow insepreably linked to the bottom screen, and you and I both will just have to live with this DS with a birth defect. 
+It's nothing to be ashamed of. 
+ANYWAY, my Nintendo DSI is one of my most prized posessions. It was my first handheld(after the Leapster but nobody remembers that) and it has almost a decade of stored memories in the form of photos, audio recordings, Flipnotes, and game save data. I felt compelled to remake a DS and a stylus here. I had a lot of trouble creating that side thing that helps it stay in the DS, though. My favorite DS game is Sonic Rush."
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(927, 128)
+texture = ExtResource("1_3seef")
+
+[node name="SonicRushBoxArt" type="Sprite2D" parent="."]
+position = Vector2(79, 186)
+texture = ExtResource("2_tlj50")
